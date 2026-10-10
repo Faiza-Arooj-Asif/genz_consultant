@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A playful Gen-Z style advice chat." />
+    <meta name="theme-color" content="#100724" />
+    <title>Gen-Z AI Consultant</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="logo-wrap">
+            <span class="brand-dot"></span>
+          </div>
+          <div class="brand-text">
+            <p class="eyebrow">No cap, just vibes</p>
+            <h1>Gen-Z AI Consultant</h1>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <span class="model-badge"><span class="pulse-dot"></span> Agent online</span>
+        </div>
+      </header>
+
+      <main class="chat-panel">
+        <div
+          id="chatWindow"
+          class="chat-window"
+          role="log"
+          aria-label="Conversation"
+          aria-live="polite"
+          aria-relevant="additions"
+        >
+          <div class="message ai">
+            <div class="bubble">Welcome to Gen-Z AI Consultant! Ask me anything.</div>
+          </div>
+        </div>
+
+        <form id="chatForm" class="composer">
+          <input
+            id="questionInput"
+            type="text"
+            placeholder="Ask me anything..."
+            aria-label="Ask the AI a question"
+            autocomplete="off"
+            maxlength="500"
+          />
+          <button type="submit">Send</button>
+        </form>
+      </main>
+    </div>
+
+  </body>
+</html>

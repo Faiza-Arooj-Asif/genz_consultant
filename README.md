@@ -1,25 +1,29 @@
-# genz_consultant
-> *Why ask ChatGPT when you can consult a script with zero patience and maximum attitude?
-A dummy AI-powered decision maker that gives you unvarnished truth, big vibes, and zero fluff in y. Ask it anything when you're feeling indecisive. No cap!
+# Gen-Z Consultant
 
-What new I have learnt:
-**flush=True**
+A lightweight, browser-based chat UI for a playful Gen-Z style consultant.
+Replies are selected at random from a built-in list; this demo does not connect
+to an AI model or send messages to an external service.
 
-print() usually writes to a buffer first.
-flush=True tells Python: “send this output to the terminal immediately, don’t wait.”
-This is useful for progress indicators like:
-print(".", end="", flush=True)
-Without flush, the dots may appear all at once after the loop, or not show in real time.
-So it makes the “thinking...” animation feel smooth.
-**name == "main"**
+## Run the app
 
-Python sets a special variable called name automatically.
+```bash
+python genz_consultant.py
+```
 
-When a file is run directly, name is "main"
+The launcher starts a local web server and opens the app in your default
+browser. Keep the terminal open while using the app; press `Ctrl+C` there to
+stop the server. If the browser does not open automatically, visit:
 
-When the file is imported from another file, name is the module’s name instead
+```text
+http://127.0.0.1:8000
+```
 
-So this line:
+You can also run `python server.py` to start the server directly.
 
-if name == "main":
-ask_ai()
+## Project structure
+
+- `genz_consultant.py` — app launcher
+- `server.py` — local static-file web server
+- `index.html` — main page
+- `style.css` — layout and styling
+- `script.js` — chat behavior and random responses
